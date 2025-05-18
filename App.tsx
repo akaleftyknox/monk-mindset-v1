@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { Alert, Button, View } from 'react-native';
+import * as DeviceActivity from 'react-native-device-activity';           // Screen Time bridge
 
 export default function App() {
+  const askPermission = async () => {
+    const status = await DeviceActivity.requestAuthorization();          // returns "authorized" | ...
+    Alert.alert('Screen Time status', JSON.stringify(status));
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Button title="Request Screen Time" onPress={askPermission} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
