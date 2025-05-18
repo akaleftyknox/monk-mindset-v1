@@ -1,7 +1,26 @@
 {
   "expo": {
-    "name": "monk-mindset-v1",
+    "name": "Monk Mindset",
     "slug": "monk-mindset-v1",
+    "scheme": "monkmindset",
+    "plugins": [
+      ["expo-build-properties",
+        { "ios": { "deploymentTarget": "15.1" } }],
+      ["react-native-device-activity",
+        {
+          "appleTeamId": "3EVT9S8278",
+          "appGroup": "group.com.ourappologies.monkmindset"
+        }]
+    ],
+    "extra": {
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": { "appExtensions": true }
+          }
+        }
+      }
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
