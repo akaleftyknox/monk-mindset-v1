@@ -6,25 +6,97 @@
     "ios": {
       "bundleIdentifier": "com.ourappologies.monk-mindset",
       "appleTeamId": "3EVT9S8278",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": "1.0.0"
     },
     "plugins": [
-      ["expo-build-properties", { "ios": { "deploymentTarget": "15.1" } }],
-      ["react-native-device-activity",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      [
+        "react-native-device-activity",
         {
           "appleTeamId": "3EVT9S8278",
           "appGroup": "group.com.ourappologies.monk-mindset"
-        }]
+        }
+      ]
     ],
     "extra": {
       "eas": {
         "build": {
           "experimental": {
             "ios": {
-              "appExtensions": []
+              "appExtensions": [
+                {
+                  "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldConfiguration",
+                  "targetName": "ShieldConfiguration",
+                  "entitlements": {
+                    "com.apple.developer.family-controls": true,
+                    "com.apple.security.application-groups": [
+                      "group.com.ourappologies.monk-mindset"
+                    ]
+                  }
+                },
+                {
+                  "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldAction",
+                  "targetName": "ShieldAction",
+                  "entitlements": {
+                    "com.apple.developer.family-controls": true,
+                    "com.apple.security.application-groups": [
+                      "group.com.ourappologies.monk-mindset"
+                    ]
+                  }
+                },
+                {
+                  "bundleIdentifier": "com.ourappologies.monk-mindset.ActivityMonitorExtension",
+                  "targetName": "ActivityMonitorExtension",
+                  "entitlements": {
+                    "com.apple.developer.family-controls": true,
+                    "com.apple.security.application-groups": [
+                      "group.com.ourappologies.monk-mindset"
+                    ]
+                  }
+                },
+                {
+                  "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldConfiguration",
+                  "targetName": "ShieldConfiguration",
+                  "entitlements": {
+                    "com.apple.developer.family-controls": true,
+                    "com.apple.security.application-groups": [
+                      "group.com.ourappologies.monk-mindset"
+                    ]
+                  }
+                },
+                {
+                  "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldAction",
+                  "targetName": "ShieldAction",
+                  "entitlements": {
+                    "com.apple.developer.family-controls": true,
+                    "com.apple.security.application-groups": [
+                      "group.com.ourappologies.monk-mindset"
+                    ]
+                  }
+                },
+                {
+                  "bundleIdentifier": "com.ourappologies.monk-mindset.ActivityMonitorExtension",
+                  "targetName": "ActivityMonitorExtension",
+                  "entitlements": {
+                    "com.apple.developer.family-controls": true,
+                    "com.apple.security.application-groups": [
+                      "group.com.ourappologies.monk-mindset"
+                    ]
+                  }
+                }
+              ]
             }
           }
-        }
+        },
+        "projectId": "cf0b27a7-9845-405d-b011-a8fe9b15a489"
       }
     },
     "version": "1.0.0",
@@ -42,10 +114,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/cf0b27a7-9845-405d-b011-a8fe9b15a489"
     }
   }
 }
