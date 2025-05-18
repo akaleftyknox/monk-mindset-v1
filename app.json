@@ -22,7 +22,7 @@
         "react-native-device-activity",
         {
           "appleTeamId": "3EVT9S8278",
-          "appGroup": "group.com.ourappologies.monk-mindset"
+          "appGroup": "group.com.ourappologies.monkmindset"
         }
       ]
     ],
@@ -38,7 +38,7 @@
                   "entitlements": {
                     "com.apple.developer.family-controls": true,
                     "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monk-mindset"
+                      "group.com.ourappologies.monkmindset"
                     ]
                   }
                 },
@@ -48,7 +48,7 @@
                   "entitlements": {
                     "com.apple.developer.family-controls": true,
                     "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monk-mindset"
+                      "group.com.ourappologies.monkmindset"
                     ]
                   }
                 },
@@ -58,7 +58,7 @@
                   "entitlements": {
                     "com.apple.developer.family-controls": true,
                     "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monk-mindset"
+                      "group.com.ourappologies.monkmindset"
                     ]
                   }
                 },
@@ -68,7 +68,7 @@
                   "entitlements": {
                     "com.apple.developer.family-controls": true,
                     "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monk-mindset"
+                      "group.com.ourappologies.monkmindset"
                     ]
                   }
                 },
@@ -78,7 +78,7 @@
                   "entitlements": {
                     "com.apple.developer.family-controls": true,
                     "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monk-mindset"
+                      "group.com.ourappologies.monkmindset"
                     ]
                   }
                 },
@@ -88,7 +88,7 @@
                   "entitlements": {
                     "com.apple.developer.family-controls": true,
                     "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monk-mindset"
+                      "group.com.ourappologies.monkmindset"
                     ]
                   }
                 }
