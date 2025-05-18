@@ -3,20 +3,26 @@
     "name": "Monk Mindset",
     "slug": "monk-mindset-v1",
     "scheme": "monkmindset",
+    "ios": {
+      "bundleIdentifier": "com.ourappologies.monk-mindset",
+      "appleTeamId": "3EVT9S8278",
+      "supportsTablet": true
+    },
     "plugins": [
-      ["expo-build-properties",
-        { "ios": { "deploymentTarget": "15.1" } }],
+      ["expo-build-properties", { "ios": { "deploymentTarget": "15.1" } }],
       ["react-native-device-activity",
         {
           "appleTeamId": "3EVT9S8278",
-          "appGroup": "group.com.ourappologies.monkmindset"
+          "appGroup": "group.com.ourappologies.monk-mindset"
         }]
     ],
     "extra": {
       "eas": {
         "build": {
           "experimental": {
-            "ios": { "appExtensions": true }
+            "ios": {
+              "appExtensions": []
+            }
           }
         }
       }
@@ -30,9 +36,6 @@
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
