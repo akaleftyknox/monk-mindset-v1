@@ -7,7 +7,10 @@
       "bundleIdentifier": "com.ourappologies.monk-mindset",
       "appleTeamId": "3EVT9S8278",
       "supportsTablet": true,
-      "runtimeVersion": "1.0.0"
+      "runtimeVersion": "1.0.0",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "plugins": [
       [
@@ -32,36 +35,6 @@
           "experimental": {
             "ios": {
               "appExtensions": [
-                {
-                  "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldConfiguration",
-                  "targetName": "ShieldConfiguration",
-                  "entitlements": {
-                    "com.apple.developer.family-controls": true,
-                    "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monkmindset"
-                    ]
-                  }
-                },
-                {
-                  "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldAction",
-                  "targetName": "ShieldAction",
-                  "entitlements": {
-                    "com.apple.developer.family-controls": true,
-                    "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monkmindset"
-                    ]
-                  }
-                },
-                {
-                  "bundleIdentifier": "com.ourappologies.monk-mindset.ActivityMonitorExtension",
-                  "targetName": "ActivityMonitorExtension",
-                  "entitlements": {
-                    "com.apple.developer.family-controls": true,
-                    "com.apple.security.application-groups": [
-                      "group.com.ourappologies.monkmindset"
-                    ]
-                  }
-                },
                 {
                   "bundleIdentifier": "com.ourappologies.monk-mindset.ShieldConfiguration",
                   "targetName": "ShieldConfiguration",
