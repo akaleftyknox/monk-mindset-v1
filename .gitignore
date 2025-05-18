@@ -14,15 +14,16 @@ expo-env.d.ts
 *.orig.*
 # *.jks # Allow if needed, but typically sensitive
 # *.p8 # Allow if needed, but typically sensitive
-# *.p12 # Handled by !credentials/ios/MonkMindSetCert.p12
 # *.key # Allow if needed, but typically sensitive
-# *.mobileprovision # Handled by !credentials/ios/*.mobileprovision
 ios/
 android/
 targets/
 
-!credentials/ios/MonkMindSetCert.p12
-!credentials/ios/*.mobileprovision
+# Credentials - Ignore by default
+credentials/
+# Un-ignore specific iOS credentials
+!credentials/ios/
+!credentials/ios/*
 
 # Metro
 .metro-health-check*

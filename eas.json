@@ -3,28 +3,29 @@
     "version": ">= 16.6.1",
     "appVersionSource": "remote"
   },
+  "ios": {
+    "appleTeamId": "3EVT9S8278"
+  },
   "build": {
     "development": {
       "developmentClient": true,
       "distribution": "internal",
       "channel": "development",
-      "credentialsSource": "local",
-      "ios": {
-        "appleTeamId": "3EVT9S8278",
-        "provisioningProfilePath": "./credentials/ios/MM-Main-Dev.mobileprovision",
-        "distributionCertificatePath": "./credentials/ios/MonkMindSetCert.p12"
-      },
+      "credentialsSource": "remote",
       "env": {
         "APPLE_TEAM_ID": "3EVT9S8278"
       }
     },
     "preview": {
       "distribution": "internal",
-      "channel": "preview"
+      "channel": "preview",
+      "credentialsSource": "remote"
     },
     "production": {
       "autoIncrement": true,
-      "channel": "production"
+      "channel": "production",
+      "distribution": "store",
+      "credentialsSource": "remote"
     }
   },
   "submit": {
