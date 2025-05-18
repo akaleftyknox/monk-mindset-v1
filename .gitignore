@@ -12,14 +12,17 @@ expo-env.d.ts
 # Native
 .kotlin/
 *.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# *.jks # Allow if needed, but typically sensitive
+# *.p8 # Allow if needed, but typically sensitive
+# *.p12 # Handled by !credentials/ios/MonkMindSetCert.p12
+# *.key # Allow if needed, but typically sensitive
+# *.mobileprovision # Handled by !credentials/ios/*.mobileprovision
 ios/
 android/
 targets/
+
+!credentials/ios/MonkMindSetCert.p12
+!credentials/ios/*.mobileprovision
 
 # Metro
 .metro-health-check*
@@ -31,7 +34,7 @@ yarn-error.*
 
 # macOS
 .DS_Store
-*.pem
+# *.pem # Allow if needed, but typically sensitive
 
 # local env files
 .env*.local

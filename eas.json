@@ -8,6 +8,12 @@
       "developmentClient": true,
       "distribution": "internal",
       "channel": "development",
+      "credentialsSource": "local",
+      "ios": {
+        "appleTeamId": "3EVT9S8278",
+        "provisioningProfilePath": "./credentials/ios/MM-Main-Dev.mobileprovision",
+        "distributionCertificatePath": "./credentials/ios/MonkMindSetCert.p12"
+      },
       "env": {
         "APPLE_TEAM_ID": "3EVT9S8278"
       }
