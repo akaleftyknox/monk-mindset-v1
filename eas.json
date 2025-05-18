@@ -1,10 +1,7 @@
 {
   "cli": {
-    "version": ">= 16.6.1",
+    "version": ">= 3.17.0",
     "appVersionSource": "remote"
-  },
-  "ios": {
-    "appleTeamId": "3EVT9S8278"
   },
   "build": {
     "development": {
@@ -19,13 +16,19 @@
     "preview": {
       "distribution": "internal",
       "channel": "preview",
-      "credentialsSource": "remote"
+      "credentialsSource": "remote",
+      "env": {
+        "APPLE_TEAM_ID": "3EVT9S8278"
+      }
     },
     "production": {
       "autoIncrement": true,
       "channel": "production",
       "distribution": "store",
-      "credentialsSource": "remote"
+      "credentialsSource": "remote",
+      "env": {
+        "APPLE_TEAM_ID": "3EVT9S8278"
+      }
     }
   },
   "submit": {
