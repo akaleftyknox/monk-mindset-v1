@@ -1,3 +1,4 @@
+import 'expo-dev-client';                 // improves native-module error reporting
 import * as React from 'react';
 import { Alert, Button, View } from 'react-native';
 import * as DeviceActivity from 'react-native-device-activity';           // Screen Time bridge
